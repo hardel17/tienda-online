@@ -22,7 +22,7 @@ El proyecto incluye un backend en **Node.js/Express** con JWT para autenticació
 
 ---
 
-##Instalación y ejecución
+###Instalación y ejecución
 
 ### 1. Clonar el repositorio
 ```bash
