@@ -1,0 +1,101 @@
+ion-thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+}
+
+/* Centrar los botones */
+.center-button {
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 20px;
+}
+
+/* Botones más elegantes */
+.center-button ion-button {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 20px;
+  min-width: 140px;
+}
+
+/* Botón eliminar individual */
+ion-item ion-button {
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trash-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); 
+}
+
+/* Resumen del carrito */
+.cart-summary {
+  margin-top: 20px;
+  ion-item {
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
+  }
+}
+/* Resumen del carrito */
+.cart-summary {
+  margin-top: 20px;
+
+  ion-item {
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
+
+    ion-label {
+      font-size: 14px; /* texto normal */
+    }
+
+    ion-note {
+      font-size: 18px; /* más grande para números */
+      font-weight: bold;
+      color: #144880;  /* azul para destacar */
+    }
+  }
+}
+
+/* Cantidad dentro de cada producto */
+ion-label p {
+  color: #555;
+  font-size: 14px;
+}
+
+ion-label p:nth-child(3), /* línea de cantidad */
+ion-label p:nth-child(4) { /* línea de subtotal */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.quantity-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-right: 10px;
+
+  ion-button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+  }
+}
+

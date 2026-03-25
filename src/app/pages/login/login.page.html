@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div class="login-container">
+          <!-- Campo Email -->
+          <ion-item lines="full">
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="email" type="email" placeholder="Correo electrónico"></ion-input>
+          </ion-item>
+
+          <!-- Campo Password -->
+          <ion-item lines="full">
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="password" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+
+          <!-- Botón Login -->
+          <ion-button expand="block" color="primary" (click)="login()">
+            Ingresar
+          </ion-button>
+
+          <!-- Botón Registro -->
+          <ion-button expand="block" fill="clear" (click)="goToRegister()">
+            ¿No tienes cuenta? Regístrate
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Tienda Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="banner">
+    <h1>Bienvenido a la Tienda Online</h1>
+    <p>Explora nuestros productos y llena tu carrito</p>
+    <ion-button routerLink="/tabs/products" color="primary">
+      <ion-icon name="storefront-outline" slot="start"></ion-icon>
+      <span>Ver Productos</span>
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <!-- Productos -->
+    <ion-tab-button tab="products" routerLink="/tabs/products">
+      <img src="assets/img/ico_product.png" alt="Productos" class="tab-icon" />
+      <ion-label>Productos</ion-label>
+    </ion-tab-button>
+
+    <!-- Carrito con badge -->
+    <ion-tab-button tab="cart" routerLink="/tabs/cart">
+      <img src="assets/img/ico_carrito.png" alt="Carrito" class="tab-icon" />
+      <ion-label>Carrito</ion-label>
+      <ion-badge color="danger" *ngIf="cartCount > 0">{{ cartCount }}</ion-badge>
+    </ion-tab-button>
+
+    <!-- Perfil -->
+    <ion-tab-button tab="profile" routerLink="/tabs/profile">
+      <img src="assets/img/perfil.png" alt="Perfil" class="tab-icon" />
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

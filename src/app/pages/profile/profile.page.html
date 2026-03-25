@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-card">
+    <ion-avatar>
+      <img src="assets/img/avatar.avif" alt="Avatar">
+    </ion-avatar>
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.email }}</p>
+  </div>
+
+  <div class="logout-container">
+    <ion-button color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <span>Cerrar Sesión</span>
+    </ion-button>
+  </div>
+</ion-content>
