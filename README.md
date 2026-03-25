@@ -29,7 +29,7 @@ El proyecto incluye un backend en **Node.js/Express** con JWT para autenticació
 git clone https://github.com/TU_USUARIO/tienda-online.git
 cd tienda-online
 
-### 2. Instalar dependencias
+### 1. Clonar el repositorio
 npm install
 
 ### 3. Ejecutar el backend
